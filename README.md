@@ -11,9 +11,10 @@ Or you can type "node liri.js" and leave it blank to see what LIRI came up with 
 
 Screen shots of the app output:
 
-Screen Shot 2020-01-02 at 2.32.58 PM.png
-Screen Shot 2020-01-02 at 2.35.25 PM.png
-Screen Shot 2020-01-02 at 2.36.54 PM.png
-Screen Shot 2020-01-02 at 2.48.56 PM.png
+![](images/Screen Shot 2020-01-02 at 2.32.58 PM.png)
+![](images/Screen Shot 2020-01-02 at 2.35.25 PM.png)
+![](images/Screen Shot 2020-01-02 at 2.36.54 PM.png)
+![](images/Screen Shot 2020-01-02 at 2.48.56 PM.png)
+
 
 Solo developer of this app
