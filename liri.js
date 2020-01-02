@@ -1,4 +1,4 @@
-js 
+
 require("dotenv").config();
 
 var keys=require("./keys.js");
@@ -24,7 +24,7 @@ if (userInput === "concert-this") {
         .get("https://rest.bandsintown.com/artists/" + userSearch + "/events?app_id=codingbootcamp")
         .then(function (response) {
             if (response.data.length === 0) {
-                console.log("Unable to find results for this artist or band.");
+                console.log("Unable to find results.");
             }
             else {
                 let eventNumber = 1;
@@ -61,9 +61,9 @@ else if (userInput === "spotify-this-song") {
                     console.log("Song Number: " + songNumber);
                     console.log("-----------------------------------------------");
                     console.log("Artist: " + response.tracks.items[i].artists[0].name);
-                    console.log("The song name is: " + response.tracks.items[i].name);
-                    console.log("Here is a song preview from Spotify: " + response.tracks.items[i].preview_url);
-                    console.log("The album containing this song is: " + response.tracks.items[i].album.name);
+                    console.log("Song Name: " + response.tracks.items[i].name);
+                    console.log("Spotify Song Preview: " + response.tracks.items[i].preview_url);
+                    console.log("Song Album: " + response.tracks.items[i].album.name);
                     console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
                     console.log("\n")
                     songNumber++;
@@ -84,9 +84,9 @@ else if (userInput === "spotify-this-song") {
                     console.log("Song Number: " + songNumber);
                     console.log("-----------------------------------------------");
                     console.log("Artist: " + response.tracks.items[i].artists[0].name);
-                    console.log("The song name is: " + response.tracks.items[i].name);
-                    console.log("Here is a song preview from Spotify: " + response.tracks.items[i].preview_url);
-                    console.log("The album containing this song is: " + response.tracks.items[i].album.name);
+                    console.log("Song Name: " + response.tracks.items[i].name);
+                    console.log("Spotify Song Preview: " + response.tracks.items[i].preview_url);
+                    console.log("Song Album: " + response.tracks.items[i].album.name);
                     console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
                     console.log("\n")
                     songNumber++;
@@ -138,7 +138,7 @@ else if (userInput === "movie-this") {
 }
 // do what it says
 else if (userInput === "" || userInput !== "concert-this" || userInput !== "spotify-this-song" || userInput !== "movie-this") {
-    console.log("Liri does not recognize your input, she has gone ahead and inputed a search for you because she's great like that.");
+    console.log("LIRI does not compute, LIRI put in her own search for you.");
     fs
         .readFile("random.txt", "utf8", function (error, data) {
             if (error) {
